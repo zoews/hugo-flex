@@ -3,9 +3,7 @@ params:
   width: 48rem          # Any length in CSS syntax / leave empty to span page
   divider: \a0          # Any string in CSS syntax / leave empty for no divider
   footer: >-            # HTML spaces (&#32;) are needed before HTML elements
-    Except where otherwise noted, content on this site is licensed under a &#32;
-    <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative
-    Commons Attribution 4.0 International License</a>. All Cats Are Beautiful
+    All Cats Are Beautiful
   rss: To subscribe to this RSS feed, copy its address and paste it into your
     favorite feed reader.
   noClasses: true       # Set to the same value as markup.highlight.noClasses
@@ -14,7 +12,7 @@ params:
   summaries: false      # Set to true to show summaries of posts on homepage
   schema: false         # Set to true to add Schema.org metadata
   opengraph: false      # Set to true to add Open Graph metadata
-  twittercards: false   # Set to true to add Twitter Cards metadata
+  twittercards: true   # Set to true to add Twitter Cards metadata
   utterances:
     repo:               # Set to Utterances repo URL to add Utterances comments
     issueterm:          # Leave empty for the default blog post to issue mapping
@@ -22,8 +20,7 @@ params:
   netlify:
     honeypot: false     # Set to true to add honeypot field in contact form
     recaptcha: false    # Set to true to add recaptcha challenge in contact form
-  # css:                # Uncomment to add custom CSS from the assets directory
-  #   - css/foo.css
+  css: custom.css               # Uncomment to add custom CSS from the assets directory
   #   - bar.css
   # js:                 # Uncomment to add custom JS from the assets directory
   #   - js/foo.js
